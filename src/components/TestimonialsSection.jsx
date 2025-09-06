@@ -139,8 +139,6 @@ export default function TestimonialsSection() {
           </div>
         </div>
       </div>
-      
-      
-    </section>
+    </section> // Adding this comment to push framer motion to github
   )
 }
