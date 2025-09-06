@@ -1,46 +1,21 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { motion } from 'framer-motion'
 
 export default function PromotionsSection() {
-  const card1Ref = useRef(null)
-  const card2Ref = useRef(null)
-  const [card1Visible, setCard1Visible] = useState(false)
-  const [card2Visible, setCard2Visible] = useState(false)
-
-  useEffect(() => {
-    const createObserver = (ref, setVisible) => {
-      const observer = new IntersectionObserver(
-        (entries, obs) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              setVisible(true)
-              obs.unobserve(entry.target)
-            }
-          })
-        },
-        { threshold: 0.25 }
-      )
-      if (ref.current) observer.observe(ref.current)
-      return observer
-    }
-
-    const obs1 = createObserver(card1Ref, setCard1Visible)
-    const obs2 = createObserver(card2Ref, setCard2Visible)
-
-    return () => {
-      if (card1Ref.current) obs1.unobserve(card1Ref.current)
-      if (card2Ref.current) obs2.unobserve(card2Ref.current)
-    }
-  }, [])
-
   return (
     <section className="py-16 bg-gray-100 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8">
           
           {/* Referral Section */}
-          <div ref={card1Ref} className={`relative bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl p-8 text-white overflow-hidden ${card1Visible ? 'animate-slide-up-card-1' : 'opacity-0 translate-y-10'}`}>
+          <motion.div
+            className="relative bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl p-8 text-white overflow-hidden"
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.35 }}
+          >
             {/* Wave decoration at top */}
             <div className="absolute top-0 left-0 right-0">
               <svg viewBox="0 0 400 60" className="w-full h-12 text-white opacity-30">
@@ -76,10 +51,16 @@ export default function PromotionsSection() {
                 <p className="font-bold text-lg">Referral Code: [GNGREFER]</p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Loyalty Section */}
-          <div ref={card2Ref} className={`relative bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl p-8 text-white overflow-hidden ${card2Visible ? 'animate-slide-up-card-2' : 'opacity-0 translate-y-10'}`}>
+          <motion.div
+            className="relative bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl p-8 text-white overflow-hidden"
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.12 }}
+            viewport={{ once: true, amount: 0.35 }}
+          >
             {/* Wave decoration at top */}
             <div className="absolute top-0 left-0 right-0">
               <svg viewBox="0 0 400 60" className="w-full h-12 text-white opacity-30">
@@ -112,31 +93,12 @@ export default function PromotionsSection() {
                 Book Now
               </button>
             </div>
-          </div>
+          </motion.div>
           
         </div>
       </div>
       
-      <style jsx>{`
-        @keyframes slideUpCard {
-          from {
-            opacity: 0;
-            transform: translateY(40px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
-        .animate-slide-up-card-1 {
-          animation: slideUpCard 0.8s ease-out 0.2s forwards;
-        }
-        
-        .animate-slide-up-card-2 {
-          animation: slideUpCard 0.8s ease-out 0.4s forwards;
-        }
-      `}</style>
+      
     </section>
   )
 }
