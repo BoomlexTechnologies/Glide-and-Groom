@@ -8,7 +8,7 @@ export default function HeroSection() {
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 drop-shadow-2xl animate-slide-up-1">
             Glide & Groom
           </h1>
-          <p className="text-2xl md:text-3xl text-blue-200 font-semibold mb-8 drop-shadow-2xl animate-slide-up-2">
+          <p className="text-2xl md:text-3xl text-white font-semibold mb-8 drop-shadow-2xl animate-slide-up-2">
             Spa On Wheels
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up-3">

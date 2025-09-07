@@ -50,7 +50,7 @@ export default function Footer() {
           {/* Copyright */}
           <div>
             <p className="text-gray-600 text-sm">
-              © 2024 All rights Reserved by GlideandGroom.in
+              © 2025 All rights Reserved by GlideandGroom.in
             </p>
           </div>
 
