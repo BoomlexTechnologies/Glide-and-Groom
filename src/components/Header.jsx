@@ -4,6 +4,17 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+const scrollToSection = (sectionId) => {
+  if (sectionId === 'top') {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  } else {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+}
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -27,21 +38,30 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-white hover:text-primary-600 font-medium transition-colors">
+            <button
+              onClick={() => scrollToSection('top')}
+              className="text-white hover:text-primary-600 font-medium transition-colors"
+            >
               Home
-            </Link>
-            <Link href="/about" className="text-white hover:text-primary-600 font-medium transition-colors">
+            </button>
+            <button
+              onClick={() => scrollToSection('about-us')}
+              className="text-white hover:text-primary-600 font-medium transition-colors"
+            >
               About Us
-            </Link>
-            <Link href="/reviews" className="text-white hover:text-primary-600 font-medium transition-colors">
+            </button>
+            <button
+              onClick={() => scrollToSection('testimonials')}
+              className="text-white hover:text-primary-600 font-medium transition-colors"
+            >
               Reviews
-            </Link>
+            </button>
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link
-              href="#contact"
+              href="tel:+919964562000"
               className="bg-primary-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-primary-700 transition-colors"
             >
               Contact us
@@ -65,29 +85,26 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-              <Link
-                href="/"
+              <button
                 className="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => { scrollToSection('top'); setIsMenuOpen(false) }}
               >
                 Home
-              </Link>
-              <Link
-                href="/about"
+              </button>
+              <button
                 className="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => { scrollToSection('about-us'); setIsMenuOpen(false) }}
               >
                 About Us
-              </Link>
-              <Link
-                href="/reviews"
+              </button>
+              <button
                 className="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => { scrollToSection('testimonials'); setIsMenuOpen(false) }}
               >
                 Reviews
-              </Link>
+              </button>
               <Link
-                href="#contact"
+                href="tel:+919964562000"
                 className="block px-3 py-2 bg-primary-600 text-white rounded-lg font-medium mx-3 mt-4"
                 onClick={() => setIsMenuOpen(false)}
               >
