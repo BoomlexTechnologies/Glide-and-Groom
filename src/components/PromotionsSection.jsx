@@ -10,9 +10,14 @@ export default function PromotionsSection() {
           
           {/* Referral Section */}
           <motion.div
-            className="relative bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl p-8 text-white overflow-hidden"
+            className="relative bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl p-8 text-white overflow-hidden cursor-pointer"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ 
+              y: -8,
+              scale: 1.02,
+              boxShadow: "0 20px 40px rgba(0, 0, 0, 0.2)"
+            }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.35 }}
           >
@@ -55,9 +60,14 @@ export default function PromotionsSection() {
 
           {/* Loyalty Section */}
           <motion.div
-            className="relative bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl p-8 text-white overflow-hidden"
+            className="relative bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl p-8 text-white overflow-hidden cursor-pointer"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ 
+              y: -8,
+              scale: 1.02,
+              boxShadow: "0 20px 40px rgba(0, 0, 0, 0.2)"
+            }}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.12 }}
             viewport={{ once: true, amount: 0.35 }}
           >
