@@ -1,5 +1,7 @@
 'use client'
 
+import Link from 'next/link'
+
 export default function ServicesSection() {
   return (
     <section className="py-20 bg-white bg-opacity-90">
@@ -65,9 +67,16 @@ export default function ServicesSection() {
                 <p className="text-gray-600">– Long coat: 2450 INR</p>
               </div>
             </div>
-            <button className="w-full mt-6 bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-              Book Now
-            </button>
+            <div className="space-y-3 mt-6">
+              <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                Book Now
+              </button>
+              <Link href="/essentialgrooming">
+                <button className="w-full mt-2 bg-white text-primary-600 border-2 border-primary-600 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                  Learn More
+                </button>
+              </Link>
+            </div>
           </div>
 
           {/* Complete Grooming */}
@@ -117,9 +126,16 @@ export default function ServicesSection() {
                 <p className="text-gray-600">– Long coat: 2950 INR</p>
               </div>
             </div>
-            <button className="w-full mt-6 bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-              Book Now
-            </button>
+            <div className="space-y-3 mt-6">
+              <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                Book Now
+              </button>
+              <Link href="/completegrooming">
+                <button className="w-full mt-2 bg-white text-primary-600 border-2 border-primary-600 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                  Learn More
+                </button>
+              </Link>
+            </div>
           </div>
 
           {/* Cat Grooming */}
@@ -135,9 +151,16 @@ export default function ServicesSection() {
                 <p className="text-2xl font-bold text-primary-600">2400 INR</p>
               </div>
             </div>
-            <button className="w-full mt-6 bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-              Book Now
-            </button>
+            <div className="space-y-3 mt-6">
+              <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
+                Book Now
+              </button>
+              <Link href="/catgrooming">
+                <button className="w-full mt-2 bg-white text-primary-600 border-2 border-primary-600 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                  Learn More
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
