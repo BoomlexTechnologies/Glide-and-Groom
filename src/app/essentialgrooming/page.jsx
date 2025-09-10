@@ -159,7 +159,7 @@ export default function EssentialGroomingPage() {
                 <div className="text-center">
                   <div className="space-y-4">
                     <button className="bg-primary-600 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-primary-700 transition-colors shadow-lg">
-                      Book Essential Grooming
+                      Request a Callback
                     </button>
                     <div className="text-gray-600">
                       <p>Mobile service • At your doorstep • Professional equipment</p>

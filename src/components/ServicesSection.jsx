@@ -68,14 +68,14 @@ export default function ServicesSection() {
               </div>
             </div>
             <div className="space-y-3 mt-6">
-              <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-                Book Now
-              </button>
               <Link href="/essentialgrooming">
-                <button className="w-full mt-2 bg-white text-primary-600 border-2 border-primary-600 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg">
                   Learn More
                 </button>
               </Link>
+              <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg">
+                Request a Callback
+              </button>
             </div>
           </div>
 
@@ -127,14 +127,14 @@ export default function ServicesSection() {
               </div>
             </div>
             <div className="space-y-3 mt-6">
-              <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-                Book Now
-              </button>
               <Link href="/completegrooming">
-                <button className="w-full mt-2 bg-white text-primary-600 border-2 border-primary-600 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg">
                   Learn More
                 </button>
               </Link>
+              <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg">
+                Request a Callback
+              </button>
             </div>
           </div>
 
@@ -152,14 +152,14 @@ export default function ServicesSection() {
               </div>
             </div>
             <div className="space-y-3 mt-6">
-              <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-                Book Now
-              </button>
               <Link href="/catgrooming">
-                <button className="w-full mt-2 bg-white text-primary-600 border-2 border-primary-600 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg">
                   Learn More
                 </button>
               </Link>
+              <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg">
+                Request a Callback
+              </button>
             </div>
           </div>
         </div>

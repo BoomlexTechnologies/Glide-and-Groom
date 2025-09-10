@@ -272,7 +272,7 @@ export default function CatGroomingPage() {
                 <div className="text-center">
                   <div className="space-y-4">
                     <button className="bg-pink-500 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-pink-600 transition-colors shadow-lg">
-                      Book Cat Grooming
+                      Request a Callback
                     </button>
                     <div className="text-gray-600">
                       <p>Gentle mobile service • Cat behavior specialists • Stress-free experience</p>

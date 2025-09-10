@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter, usePathname } from 'next/navigation'
 
 const scrollToSection = (sectionId) => {
   if (sectionId === 'top') {
@@ -17,6 +18,17 @@ const scrollToSection = (sectionId) => {
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
+  const isHomePage = pathname === '/'
+  
+  const handleNavigation = (sectionId) => {
+    if (isHomePage) {
+      scrollToSection(sectionId)
+    } else {
+      router.push(`/#${sectionId}`)
+    }
+  }
 
   return (
     <header className="bg-[#031E38] shadow-lg sticky top-0 z-50">
@@ -39,19 +51,19 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <button
-              onClick={() => scrollToSection('top')}
+              onClick={() => handleNavigation('top')}
               className="text-white hover:text-primary-600 font-medium transition-colors"
             >
               Home
             </button>
             <button
-              onClick={() => scrollToSection('about-us')}
+              onClick={() => handleNavigation('about-us')}
               className="text-white hover:text-primary-600 font-medium transition-colors"
             >
               About Us
             </button>
             <button
-              onClick={() => scrollToSection('testimonials')}
+              onClick={() => handleNavigation('testimonials')}
               className="text-white hover:text-primary-600 font-medium transition-colors"
             >
               Reviews
@@ -87,19 +99,19 @@ export default function Header() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               <button
                 className="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium"
-                onClick={() => { scrollToSection('top'); setIsMenuOpen(false) }}
+                onClick={() => { handleNavigation('top'); setIsMenuOpen(false) }}
               >
                 Home
               </button>
               <button
                 className="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium"
-                onClick={() => { scrollToSection('about-us'); setIsMenuOpen(false) }}
+                onClick={() => { handleNavigation('about-us'); setIsMenuOpen(false) }}
               >
                 About Us
               </button>
               <button
                 className="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium"
-                onClick={() => { scrollToSection('testimonials'); setIsMenuOpen(false) }}
+                onClick={() => { handleNavigation('testimonials'); setIsMenuOpen(false) }}
               >
                 Reviews
               </button>

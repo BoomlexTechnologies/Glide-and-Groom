@@ -64,12 +64,6 @@ export default function CompleteGroomingPage() {
                       <li className="flex items-start">
                         <span className="text-black mr-3 mt-1">✓</span>
                         <div className="text-black">
-                          <strong>Full Haircut / Styling:</strong> Custom cut to breed standard or your personal preference.
-                        </div>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-black mr-3 mt-1">✓</span>
-                        <div className="text-black">
                           <strong>Teeth Cleaning:</strong> It helps freshen breath, reduce plaque buildup, and promote healthier gums.
                         </div>
                       </li>
@@ -215,7 +209,7 @@ export default function CompleteGroomingPage() {
                 <div className="text-center">
                   <div className="space-y-4">
                     <button className="bg-primary-600 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-primary-700 transition-colors shadow-lg">
-                      Book Complete Grooming
+                      Request a Callback
                     </button>
                     <div className="text-gray-600">
                       <p>Premium mobile service • Professional equipment • Expert groomers</p>

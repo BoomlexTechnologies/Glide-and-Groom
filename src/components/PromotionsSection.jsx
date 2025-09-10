@@ -6,9 +6,9 @@ export default function PromotionsSection() {
   return (
     <section className="py-16 bg-gray-100 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="flex justify-center">
           
-          {/* Referral Section */}
+          {/* Referral Section - Commented Out
           <motion.div
             className="relative bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl p-8 text-white overflow-hidden cursor-pointer"
             initial={{ opacity: 0, y: 60 }}
@@ -21,7 +21,6 @@ export default function PromotionsSection() {
             transition={{ duration: 0.7, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.35 }}
           >
-            {/* Wave decoration at top */}
             <div className="absolute top-0 left-0 right-0">
               <svg viewBox="0 0 400 60" className="w-full h-12 text-white opacity-30">
                 <path d="M0,20 Q100,0 200,20 T400,20 L400,0 L0,0 Z" fill="currentColor"/>
@@ -57,10 +56,11 @@ export default function PromotionsSection() {
               </div>
             </div>
           </motion.div>
+          */}
 
           {/* Loyalty Section */}
           <motion.div
-            className="relative bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl p-8 text-white overflow-hidden cursor-pointer"
+            className="relative bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl p-8 text-white overflow-hidden cursor-pointer max-w-lg"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{ 
@@ -100,15 +100,13 @@ export default function PromotionsSection() {
               </div>
               
               <button className="bg-black bg-opacity-30 hover:bg-opacity-50 text-white px-8 py-3 rounded-lg font-bold text-lg transition-all duration-300 backdrop-blur-sm">
-                Book Now
+                Request a Callback
               </button>
             </div>
           </motion.div>
           
         </div>
       </div>
-      
-      
     </section>
   )
 }

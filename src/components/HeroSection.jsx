@@ -13,8 +13,7 @@ export default function HeroSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up-3">
             <button className="bg-primary-600 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-primary-700 transition-colors shadow-lg backdrop-blur-sm">
-              Book Now
-              <span className="text-white text-lg drop-shadow-2xl"> Pay Later</span>
+              Request a Callback
             </button>
           </div>
         </div>
