@@ -42,7 +42,7 @@ export default function WhyChooseSection() {
       icon: "👨‍⚕️",
       title: "Professional Groomers",
       description: "Certified experts with years of experience",
-      image: "/professional-groomers.webp"
+      image: "/professionals-groom.png"
     },
     {
       icon: "❤️",
@@ -60,7 +60,7 @@ export default function WhyChooseSection() {
       icon: "✨",
       title: "Premium Products",
       description: "High-quality, pet-safe grooming products",
-      image: "/premium-products.webp"
+      image: "/premium-products.jpg"
     }
   ]
 
@@ -69,12 +69,12 @@ export default function WhyChooseSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-block bg-yellow-400 text-black px-4 py-2 rounded-full font-semibold mb-6">
+          <div className="inline-block text-black px-4 py-2 rounded-full font-semibold mb-6" style={{backgroundColor: '#6699CC'}}>
             🏆 Why Choose Us
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Why Choose
-            <span className="text-yellow-500 ml-3">Glide & Groom?</span>
+            <span className="ml-3" style={{color: '#6699CC'}}>Glide & Groom?</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We're not just another grooming service. We're your trusted partner, 
@@ -115,7 +115,7 @@ export default function WhyChooseSection() {
         </div>
 
         {/* Stats Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-8 md:p-12">
+        <div className="rounded-3xl p-8 md:p-12" style={{background: 'linear-gradient(to right, #6699CC, #5588BB)'}}>
           <div className="grid md:grid-cols-3 gap-8 text-white text-center">
             <div className={`${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.6s' }}>
               <div className="text-4xl md:text-5xl font-bold mb-2">98%</div>

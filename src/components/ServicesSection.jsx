@@ -69,11 +69,11 @@ export default function ServicesSection() {
             </div>
             <div className="space-y-3 mt-6">
               <Link href="/essentialgrooming">
-                <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg">
+                <button className="w-full text-white py-3 rounded-lg font-semibold hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg hover:opacity-90" style={{backgroundColor: '#6699CC'}}>
                   Learn More
                 </button>
               </Link>
-              <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg">
+              <button className="w-full text-white py-3 rounded-lg font-semibold hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg hover:opacity-90" style={{backgroundColor: '#6699CC'}}>
                 Request a Callback
               </button>
             </div>
@@ -128,11 +128,11 @@ export default function ServicesSection() {
             </div>
             <div className="space-y-3 mt-6">
               <Link href="/completegrooming">
-                <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg">
+                <button className="w-full text-white py-3 rounded-lg font-semibold hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg hover:opacity-90" style={{backgroundColor: '#6699CC'}}>
                   Learn More
                 </button>
               </Link>
-              <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg">
+              <button className="w-full text-white py-3 rounded-lg font-semibold hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg hover:opacity-90" style={{backgroundColor: '#6699CC'}}>
                 Request a Callback
               </button>
             </div>
@@ -153,11 +153,11 @@ export default function ServicesSection() {
             </div>
             <div className="space-y-3 mt-6">
               <Link href="/catgrooming">
-                <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg">
+                <button className="w-full text-white py-3 rounded-lg font-semibold hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg hover:opacity-90" style={{backgroundColor: '#6699CC'}}>
                   Learn More
                 </button>
               </Link>
-              <button className="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg">
+              <button className="w-full text-white py-3 rounded-lg font-semibold hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-lg hover:opacity-90" style={{backgroundColor: '#6699CC'}}>
                 Request a Callback
               </button>
             </div>

@@ -33,16 +33,16 @@ export default function Header() {
   return (
     <header className="bg-[#031E38] shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center ">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image
                 src="/cropped-cropped-Glide-and-Groom-Logo-2.jpg"
                 alt="Glide & Groom Logo"
-                width={120}
-                height={60}
-                className="h-12 w-auto object-contain"
+                width={140}
+                height={70}
+                className="h-14 w-auto object-contain"
                 priority
               />
             </Link>

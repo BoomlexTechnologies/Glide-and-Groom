@@ -12,7 +12,7 @@ export default function HeroSection() {
             Spa On Wheels
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up-3">
-            <button className="bg-primary-600 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-primary-700 transition-colors shadow-lg backdrop-blur-sm">
+            <button className="text-white px-8 py-4 rounded-lg text-xl font-semibold shadow-lg backdrop-blur-sm hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-xl" style={{backgroundColor: '#6699CC'}} onMouseEnter={(e) => e.target.style.backgroundColor = '#5588BB'} onMouseLeave={(e) => e.target.style.backgroundColor = '#6699CC'}>
               Request a Callback
             </button>
           </div>
