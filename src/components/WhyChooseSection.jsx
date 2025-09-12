@@ -59,7 +59,7 @@ export default function WhyChooseSection() {
       icon: "❤️",
       title: "One-on-One Attention",
       description: "Personalized care focused solely on your pet",
-      image: "/one-on-one-attention.webp"
+      image: "/one-on-one.webp"
     },
     {
       icon: "🐕",
