@@ -25,115 +25,185 @@ export default function EssentialGroomingPage() {
         <Header />
         
         {/* Hero Section */}
-        <section className="py-20 bg-white bg-opacity-90">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Breadcrumb */}
-            <nav className="mb-8">
-              <div className="flex items-center space-x-2 text-sm text-gray-600">
-                <Link href="/" className="hover:text-primary-600 transition-colors">
+        <section className="py-24 bg-gradient-to-b from-white via-blue-50/30 to-white relative overflow-hidden">
+          {/* Background Elements */}
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-50/20 via-transparent to-purple-50/20"></div>
+          <div className="absolute top-20 right-20 w-64 h-64 bg-blue-100/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-72 h-72 bg-purple-100/20 rounded-full blur-3xl"></div>
+          
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            {/* Enhanced Breadcrumb */}
+            <nav className="mb-12">
+              <div className="flex items-center space-x-3 text-sm">
+                <Link href="/" className="text-gray-600 hover:text-blue-600 transition-colors font-medium">
                   Home
                 </Link>
-                <span>/</span>
-                <span className="text-gray-900 font-medium">Essential Grooming</span>
+                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+                <span className="text-gray-900 font-semibold">Essential Grooming</span>
               </div>
             </nav>
 
             {/* Main Content */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Essential Grooming
-              </h1>
+            <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-10 shadow-2xl border border-gray-100/50">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </div>
+                <h1 className="text-5xl md:text-6xl font-bold text-gray-900 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text text-transparent">
+                  Essential Grooming
+                </h1>
+              </div>
               
               <div className="prose prose-lg max-w-none">
-                <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                <p className="text-2xl text-gray-600 mb-12 leading-relaxed text-center">
                   Our Essential Grooming package provides all the fundamental care your dog needs to stay clean, 
                   healthy, and comfortable. This comprehensive service covers all the basics of pet hygiene and grooming.
                 </p>
 
-                <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <div className="grid md:grid-cols-2 gap-12 mb-16">
                   {/* Services Included */}
-                  <div>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6">What's Included</h2>
-                    <ul className="space-y-4">
-                      <li className="flex items-start">
-                        <span className="text-black mr-3 mt-1">✓</span>
-                        <div className="text-black">
-                          <strong>Bathing:</strong> Thorough cleaning with premium pet-safe shampoos
+                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8 border border-blue-100">
+                    <div className="flex items-center gap-3 mb-8">
+                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <h2 className="text-3xl font-bold text-gray-900">What's Included</h2>
+                    </div>
+                    <ul className="space-y-6">
+                      <li className="flex items-start group">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4 group-hover:bg-green-200 transition-colors">
+                          <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="text-gray-800">
+                          <strong className="text-gray-900">Bathing:</strong> Thorough cleaning with premium pet-safe shampoos
                         </div>
                       </li>
-                      <li className="flex items-start">
-                        <span className="text-black mr-3 mt-1">✓</span>
-                        <div className="text-black">
-                          <strong>Blow Drying:</strong> Gentle drying to prevent matting and ensure comfort
+                      <li className="flex items-start group">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4 group-hover:bg-green-200 transition-colors">
+                          <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="text-gray-800">
+                          <strong className="text-gray-900">Blow Drying:</strong> Gentle drying to prevent matting and ensure comfort
                         </div>
                       </li>
-                      <li className="flex items-start">
-                        <span className="text-black mr-3 mt-1">✓</span>
-                        <div className="text-black">
-                          <strong>Combing:</strong> Detangling and brushing for a smooth, healthy coat
+                      <li className="flex items-start group">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4 group-hover:bg-green-200 transition-colors">
+                          <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="text-gray-800">
+                          <strong className="text-gray-900">Combing:</strong> Detangling and brushing for a smooth, healthy coat
                         </div>
                       </li>
-                      <li className="flex items-start">
-                        <span className="text-black mr-3 mt-1">✓</span>
-                        <div className="text-black">
-                          <strong>Sanitary Clipping:</strong> Hygiene maintenance for sensitive areas
+                      <li className="flex items-start group">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4 group-hover:bg-green-200 transition-colors">
+                          <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="text-gray-800">
+                          <strong className="text-gray-900">Sanitary Clipping:</strong> Hygiene maintenance for sensitive areas
                         </div>
                       </li>
-                      <li className="flex items-start">
-                        <span className="text-black mr-3 mt-1">✓</span>
-                        <div className="text-black">
-                          <strong>Ear Cleaning:</strong> Gentle cleaning to prevent infections
+                      <li className="flex items-start group">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4 group-hover:bg-green-200 transition-colors">
+                          <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="text-gray-800">
+                          <strong className="text-gray-900">Ear Cleaning:</strong> Gentle cleaning to prevent infections
                         </div>
                       </li>
-                      <li className="flex items-start">
-                        <span className="text-black mr-3 mt-1">✓</span>
-                        <div className="text-black">
-                          <strong>Under-belly Clipping:</strong> Trimming for cleanliness and comfort
+                      <li className="flex items-start group">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4 group-hover:bg-green-200 transition-colors">
+                          <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="text-gray-800">
+                          <strong className="text-gray-900">Under-belly Clipping:</strong> Trimming for cleanliness and comfort
                         </div>
                       </li>
-                      <li className="flex items-start">
-                        <span className="text-black mr-3 mt-1">✓</span>
-                        <div className="text-black">
-                          <strong>Nail Clipping:</strong> Safe trimming to maintain paw health
+                      <li className="flex items-start group">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4 group-hover:bg-green-200 transition-colors">
+                          <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="text-gray-800">
+                          <strong className="text-gray-900">Nail Clipping:</strong> Safe trimming to maintain paw health
                         </div>
                       </li>
-                      <li className="flex items-start">
-                        <span className="text-black mr-3 mt-1">✓</span>
-                        <div className="text-black">
-                          <strong>Body Perfume:</strong> Light, pet-safe fragrance for freshness
+                      <li className="flex items-start group">
+                        <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4 group-hover:bg-green-200 transition-colors">
+                          <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div className="text-gray-800">
+                          <strong className="text-gray-900">Body Perfume:</strong> Light, pet-safe fragrance for freshness
                         </div>
                       </li>
                     </ul>
                   </div>
 
                   {/* Pricing */}
-                  <div>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6">Pricing</h2>
-                    <div className="space-y-4">
-                      <div className="bg-gray-50 rounded-lg p-6">
-                        <h3 className="text-xl font-semibold text-gray-900 mb-4">Small Dog</h3>
-                        <div className="space-y-2">
-                          <div className="flex justify-between items-center">
-                            <span className="text-gray-600">Short coat:</span>
-                            <span className="text-2xl font-bold text-primary-600">₹1,450</span>
+                  <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 border border-purple-100">
+                    <div className="flex items-center gap-3 mb-8">
+                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                        </svg>
+                      </div>
+                      <h2 className="text-3xl font-bold text-gray-900">Pricing</h2>
+                    </div>
+                    <div className="space-y-6">
+                      <div className="bg-white rounded-2xl p-6 shadow-lg border border-purple-100">
+                        <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                          <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                          </svg>
+                          Small Dog
+                        </h3>
+                        <div className="space-y-4">
+                          <div className="flex justify-between items-center p-3 bg-purple-50 rounded-lg">
+                            <span className="text-gray-700 font-medium">Short coat:</span>
+                            <span className="text-3xl font-bold text-purple-600">₹1,450</span>
                           </div>
-                          <div className="flex justify-between items-center">
-                            <span className="text-gray-600">Long coat:</span>
-                            <span className="text-2xl font-bold text-primary-600">₹1,750</span>
+                          <div className="flex justify-between items-center p-3 bg-purple-50 rounded-lg">
+                            <span className="text-gray-700 font-medium">Long coat:</span>
+                            <span className="text-3xl font-bold text-purple-600">₹1,750</span>
                           </div>
                         </div>
                       </div>
                       
-                      <div className="bg-gray-50 rounded-lg p-6">
-                        <h3 className="text-xl font-semibold text-gray-900 mb-4">Big Dog</h3>
-                        <div className="space-y-2">
-                          <div className="flex justify-between items-center">
-                            <span className="text-gray-600">Short coat:</span>
-                            <span className="text-2xl font-bold text-primary-600">₹1,950</span>
+                      <div className="bg-white rounded-2xl p-6 shadow-lg border border-pink-100">
+                        <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                          <svg className="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                          </svg>
+                          Big Dog
+                        </h3>
+                        <div className="space-y-4">
+                          <div className="flex justify-between items-center p-3 bg-pink-50 rounded-lg">
+                            <span className="text-gray-700 font-medium">Short coat:</span>
+                            <span className="text-3xl font-bold text-pink-600">₹1,950</span>
                           </div>
-                          <div className="flex justify-between items-center">
-                            <span className="text-gray-600">Long coat:</span>
-                            <span className="text-2xl font-bold text-primary-600">₹2,450</span>
+                          <div className="flex justify-between items-center p-3 bg-pink-50 rounded-lg">
+                            <span className="text-gray-700 font-medium">Long coat:</span>
+                            <span className="text-3xl font-bold text-pink-600">₹2,450</span>
                           </div>
                         </div>
                       </div>
@@ -142,27 +212,73 @@ export default function EssentialGroomingPage() {
                 </div>
 
                 {/* Additional Information */}
-                <div className="bg-blue-50 rounded-lg p-6 mb-8">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Choose Essential Grooming?</h3>
-                  <p className="text-gray-700 mb-4">
+                <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 mb-12 border border-blue-100">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-3xl font-bold text-gray-900">Why Choose Essential Grooming?</h3>
+                  </div>
+                  <p className="text-xl text-gray-700 mb-6 leading-relaxed">
                     Perfect for regular maintenance and keeping your dog clean and comfortable. This package is ideal for:
                   </p>
-                  <ul className="list-disc list-inside space-y-2 text-gray-700">
-                    <li>Dogs that need regular hygiene maintenance</li>
-                    <li>First-time grooming experiences</li>
-                    <li>Maintenance between full grooming sessions</li>
-                    <li>Senior dogs who need gentle care</li>
+                  <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                        <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      Dogs that need regular hygiene maintenance
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                        <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      First-time grooming experiences
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                        <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      Maintenance between full grooming sessions
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                        <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      Senior dogs who need gentle care
+                    </li>
                   </ul>
                 </div>
 
                 {/* Call to Action */}
                 <div className="text-center">
-                  <div className="space-y-4">
-                    <button className="text-white px-8 py-4 rounded-lg text-xl font-semibold transition-colors shadow-lg hover:opacity-90" style={{backgroundColor: '#6699CC'}}>
-                      Request a Callback
+                  <div className="space-y-6">
+                    <button className="group relative text-white px-12 py-6 rounded-2xl text-2xl font-semibold transition-all duration-300 shadow-2xl hover:shadow-3xl hover:scale-105 transform" style={{backgroundColor: '#6699CC'}}>
+                      <span className="relative z-10 flex items-center justify-center gap-3">
+                        <svg className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        Request a Callback
+                      </span>
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </button>
-                    <div className="text-gray-600">
-                      <p>Mobile service • At your doorstep • Professional equipment</p>
+                    <div className="text-gray-600 text-lg">
+                      <p className="flex items-center justify-center gap-2">
+                        <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        Mobile service • At your doorstep • Professional equipment
+                      </p>
                     </div>
                   </div>
                 </div>
