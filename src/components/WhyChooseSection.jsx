@@ -92,7 +92,7 @@ export default function WhyChooseSection() {
           </div>
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text text-transparent">
             Why Choose
-            <span className="ml-4" style={{color: '#6699CC'}}>Glide & Groom?</span>
+            <span className="ml-4">Glide & Groom?</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             We're not just another grooming service. We're your trusted partner, 
@@ -143,7 +143,7 @@ export default function WhyChooseSection() {
         </div>
 
         {/* Stats Section */}
-        <div className="relative rounded-3xl p-10 md:p-16 shadow-2xl overflow-hidden" style={{background: 'linear-gradient(135deg, #6699CC, #5588BB, #4477AA)'}}>
+        <div className="relative rounded-3xl p-10 md:p-16 shadow-2xl overflow-hidden" style={{background: 'linear-gradient(135deg, #1e3a8a, #1e40af, #1d4ed8, #2563eb)'}}>
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <svg className="w-full h-full" viewBox="0 0 100 100" fill="currentColor">

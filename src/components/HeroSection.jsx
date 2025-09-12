@@ -44,22 +44,22 @@ export default function HeroSection() {
           {/* Trust Indicators */}
           <div className="mt-16 flex flex-wrap justify-center items-center gap-8 text-white animate-slide-up-3">
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-700" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-5 h-5 text-[#5ced73]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-sm font-medium text-white">Professional Groomers</span>
+              <span className="text-sm font-medium text-white" style={{textShadow: '3px 3px 12px #000000'}}>Professional Groomers</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-700" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-5 h-5 text-[#5ced73]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-sm font-medium text-white">Mobile Service</span>
+              <span className="text-sm font-medium text-white" style={{textShadow: '3px 3px 12px #000000'}}>Mobile Service</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-700" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-5 h-5 text-[#5ced73]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span className="text-sm font-medium text-white">Premium Products</span>
+              <span className="text-sm font-medium text-white" style={{textShadow: '3px 3px 12px #000000'}}>Premium Products</span>
             </div>
           </div>
         </div>

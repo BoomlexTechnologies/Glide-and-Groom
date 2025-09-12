@@ -81,7 +81,7 @@ export default function Header() {
             <Link
               href="tel:+919964562000"
               className="text-white px-6 py-3 rounded-xl font-medium transition-colors duration-200"
-              style={{backgroundColor: '#6699CC'}}
+              style={{backgroundColor: '#67ACF9'}} 
               onMouseEnter={(e) => e.target.style.backgroundColor = '#5588BB'}
               onMouseLeave={(e) => e.target.style.backgroundColor = '#6699CC'}
             >
