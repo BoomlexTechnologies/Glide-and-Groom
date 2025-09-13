@@ -15,26 +15,26 @@ const scrollToSection = (sectionId) => {
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-100 h-[30vh] flex flex-col justify-center">
+    <footer className="bg-gradient-to-br from-slate-50 to-slate-100 h-[30vh] flex flex-col justify-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Navigation Links - Centered */}
         <nav className="flex justify-start space-x-8 mb-8">
           <button 
             onClick={() => scrollToSection('top')}
-            className="text-gray-700 hover:text-red-500 transition-colors"
+            className="text-gray-700 hover:text-slate-800 transition-colors"
           >
             Home
           </button>
           <button 
             onClick={() => scrollToSection('about-us')}
-            className="text-gray-700 hover:text-red-500 transition-colors"
+            className="text-gray-700 hover:text-slate-800 transition-colors"
           >
             About Us
           </button>
           <button 
             onClick={() => scrollToSection('testimonials')}
-            className="text-gray-700 hover:text-red-500 transition-colors"
+            className="text-gray-700 hover:text-slate-800 transition-colors"
           >
             Reviews
           </button>

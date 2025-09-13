@@ -143,7 +143,7 @@ export default function WhyChooseSection() {
         </div>
 
         {/* Stats Section */}
-        <div className="relative rounded-3xl p-10 md:p-16 shadow-2xl overflow-hidden" style={{background: 'linear-gradient(135deg, #1e3a8a, #1e40af, #1d4ed8, #2563eb)'}}>
+        <div className="relative rounded-3xl p-10 md:p-16 shadow-2xl overflow-hidden" style={{background: 'linear-gradient(135deg, #071d43, #05152f, #040e1b)'}}>
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <svg className="w-full h-full" viewBox="0 0 100 100" fill="currentColor">

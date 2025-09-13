@@ -1,6 +1,10 @@
 'use client'
 
+import { useModal } from './ModalContext'
+
 export default function HeroSection() {
+  const { openCallbackModal } = useModal()
+  
   return (
     <section className="relative h-[90vh] bg-transparent flex items-center justify-center overflow-hidden">
       {/* Enhanced Background Elements */}
@@ -27,10 +31,12 @@ export default function HeroSection() {
           
           {/* Enhanced CTA Section */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up-3">
-            <button className="group relative overflow-hidden select-none text-white px-6 py-4 sm:px-8 sm:py-5 md:px-12 md:py-6 rounded-2xl text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold shadow-[5px 4px 10px 0px rgba(0, 0, 0, 0.86)] hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-[0_35px_70px_rgba(0,0,0,0.6)] border border-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40" 
-                    style={{backgroundColor: '#67ACF9'}} 
-                    onMouseEnter={(e) => e.target.style.backgroundColor = '#5588BB'} 
-                    onMouseLeave={(e) => e.target.style.backgroundColor = '#6699CC'}>
+            <button 
+              onClick={openCallbackModal}
+              className="group relative overflow-hidden select-none text-white px-6 py-4 sm:px-8 sm:py-5 md:px-12 md:py-6 rounded-2xl text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold shadow-[5px 4px 10px 0px rgba(0, 0, 0, 0.86)] hover:scale-105 transform transition-all duration-300 ease-in-out hover:shadow-[0_35px_70px_rgba(0,0,0,0.6)] border border-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40" 
+              style={{background: 'linear-gradient(135deg, #071d43, #05152f, #040e1b)'}} 
+              onMouseEnter={(e) => e.target.style.background = 'linear-gradient(135deg, #05152f, #040e1b, #020a14)'} 
+              onMouseLeave={(e) => e.target.style.background = 'linear-gradient(135deg, #071d43, #05152f, #040e1b)'}>
               <span className="relative z-10 flex items-center gap-2 sm:gap-3 select-none bg-transparent" style={{textShadow: '0 2px 6px rgba(0,0,0,0.7)'}}>
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 group-hover:scale-110 transition-transform duration-300 bg-transparent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />

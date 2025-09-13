@@ -8,9 +8,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --brand-blue: #6699CC;
-  --brand-blue-dark: #5588BB;
-  --brand-blue-darker: #4477AA;
+  --brand-blue: #071d43;
+  --brand-blue-dark: #05152f;
+  --brand-blue-darker: #040e1b;
+  --brand-blue-light: #0a2a5a;
+  --brand-blue-lighter: #0d3570;
+  --brand-blue-darkest: #020a14;
+  --brand-blue-accent: #1e3a8a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -124,15 +128,15 @@ body {
   
   /* Enhanced shadows */
   .shadow-brand {
-    box-shadow: 0 10px 25px rgba(102, 153, 204, 0.15);
+    box-shadow: 0 10px 25px rgba(7, 29, 67, 0.15);
   }
   
   .shadow-brand-lg {
-    box-shadow: 0 20px 40px rgba(102, 153, 204, 0.2);
+    box-shadow: 0 20px 40px rgba(7, 29, 67, 0.2);
   }
   
   .shadow-brand-xl {
-    box-shadow: 0 30px 60px rgba(102, 153, 204, 0.25);
+    box-shadow: 0 30px 60px rgba(7, 29, 67, 0.25);
   }
   
   /* Hover effects */
@@ -150,7 +154,7 @@ body {
   }
   
   .hover-glow:hover {
-    box-shadow: 0 0 20px rgba(102, 153, 204, 0.4);
+    box-shadow: 0 0 20px rgba(7, 29, 67, 0.4);
   }
 }
 

@@ -81,9 +81,9 @@ export default function Header() {
             <Link
               href="tel:+919964562000"
               className="text-white px-6 py-3 rounded-xl font-medium transition-colors duration-200"
-              style={{backgroundColor: '#67ACF9'}} 
-              onMouseEnter={(e) => e.target.style.backgroundColor = '#5588BB'}
-              onMouseLeave={(e) => e.target.style.backgroundColor = '#6699CC'}
+              style={{background: 'linear-gradient(135deg, #3b82f6, #2563eb)'}} 
+              onMouseEnter={(e) => e.target.style.background = 'linear-gradient(135deg, #2563eb, #1d4ed8)'}
+              onMouseLeave={(e) => e.target.style.background = 'linear-gradient(135deg, #3b82f6, #2563eb)'}
             >
               Contact us
             </Link>
@@ -127,7 +127,7 @@ export default function Header() {
               <Link
                 href="tel:+919964562000"
                 className="block w-full text-center px-4 py-2 text-white rounded font-medium mt-4 transition-colors duration-200"
-                style={{backgroundColor: '#6699CC'}}
+                style={{background: 'linear-gradient(135deg, #3b82f6, #2563eb)'}}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact us
