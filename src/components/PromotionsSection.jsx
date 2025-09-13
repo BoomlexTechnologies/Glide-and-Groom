@@ -106,8 +106,8 @@ export default function PromotionsSection() {
               <div className="md:col-span-2 flex flex-col items-center md:items-end justify-center">
                 <button 
                   onClick={openCallbackModal}
-                  className="group/btn relative text-white px-8 py-5 rounded-2xl font-bold text-lg hover:scale-105 transform transition-all duration-300 shadow-2xl hover:shadow-3xl border border-white/20 w-full md:w-auto" 
-                  style={{background: 'linear-gradient(135deg, #071d43, #05152f, #040e1b)'}}
+                  className="group/btn relative text-white px-8 py-5 rounded-2xl font-bold text-lg hover:scale-105 transform transition-all duration-300 shadow-2xl hover:shadow-3xl border border-white/30 w-full md:w-auto" 
+                  style={{background: 'linear-gradient(135deg, #3b82f6, #2563eb, #1d4ed8)'}}
                 >
                   <span className="relative z-10 flex items-center justify-center gap-3">
                     <svg className="w-5 h-5 group-hover/btn:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
