@@ -31,7 +31,7 @@ export default function Header() {
   }
 
   return (
-    <header className="bg-[#031E38] shadow-2xl sticky top-0 z-50 backdrop-blur-sm border-b border-white/10">
+    <header className="bg-[#000000] shadow-2xl sticky top-0 z-50 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center ">
           {/* Logo */}
