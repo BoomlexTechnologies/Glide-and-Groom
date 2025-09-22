@@ -44,34 +44,39 @@ export default function WhyChooseSection() {
 
   const features = [
     {
+      id: 1,
       icon: "🏠",
       title: "Convenience at Your Doorstep",
       description: "We come to you, eliminating travel stress for your pet",
-      image: "/convenience-doorstep.jpeg"
+      image: "/convenient.webp"
     },
     {
+      id: 2,
       icon: "👨‍⚕️",
       title: "Professional Groomers",
       description: "Certified experts with years of experience",
-      image: "/professionals-groom.png"
+      image: "/unnamed.webp"
     },
     {
+      id: 3,
       icon: "❤️",
       title: "One-on-One Attention",
       description: "Personalized care focused solely on your pet",
-      image: "/one-on-one.webp"
+      image: "/1-1-attention.webp"
     },
     {
+      id: 4,
       icon: "🐕",
       title: "All Breeds and Sizes",
       description: "From tiny Chihuahuas to gentle giants",
-      image: "/all-breeds-sizes.webp"
+      image: "/all_breed_size.webp"
     },
     {
+      id: 5,
       icon: "✨",
       title: "Premium Products",
       description: "High-quality, pet-safe grooming products",
-      image: "/premium-products.jpg"
+      image: "/pre_pro.webp"
     }
   ]
 
@@ -121,7 +126,7 @@ export default function WhyChooseSection() {
                     alt={feature.title}
                     width={400}
                     height={300}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className={`w-full h-full ${feature.id > 3 ? 'object-contain' : 'object-cover'} group-hover:scale-105 transition-transform duration-500`}
                   />
                 </div>
 
